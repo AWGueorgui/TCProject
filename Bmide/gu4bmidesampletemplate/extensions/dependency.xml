@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TcBusinessDataIncludes currentTemplateVersion="12.0_5" displayName="bmidesampletemplate" enableOpsDataDeploy="true" guid="0CF592E1100E9C887A7905D7DD58CCE6" isDescriptionMandatory="false" name="gu4bmidesampletemplate" optional="true" prefixes="Gu4" teamcenterTemplate="false">
+    <include file="foundation_template.xml"/>
+    <include file="aws2_template.xml"/>
+    <include file="bdo0branchdataorganization_template.xml"/>
+    <include file="bhv0branchfoundation_template.xml"/>
+    <include file="cla0classification_template.xml"/>
+    <include file="cm_template.xml"/>
+    <include file="nx0tcin_template.xml"/>
+    <include file="translationservice_template.xml"/>
+    <include file="Cm1cmaws_template.xml"/>
+    <include file="activeworkspacebom_template.xml"/>
+    <include file="aud0auditaw_template.xml"/>
+    <include file="aut0authorizationaws_template.xml"/>
+    <include file="bhv1branchingandversioning_template.xml"/>
+    <include file="csi_template.xml"/>
+    <include file="dma1docmgmtaw_template.xml"/>
+    <include file="lo1logicalobject_template.xml"/>
+    <include file="nx1tcincm_template.xml"/>
+    <include file="rb0reportingaw_template.xml"/>
+    <include file="relationshipviewer_template.xml"/>
+    <include file="s2clsocial_template.xml"/>
+    <include file="saw1projectmanagementaw_template.xml"/>
+    <include file="shapesearch_template.xml"/>
+    <include file="sub0subscription_template.xml"/>
+    <include file="um0usermanagement_template.xml"/>
+    <include file="arm0activeworkspacereqmgmt_template.xml"/>
+    <include file="arm1awreqmgmtse_template.xml"/>
+    <include file="ase0activeworkspacesyseng_template.xml"/>
+    <include file="awv0activeworkspacevis_template.xml"/>
+    <include file="csi1cmsmawinterface_template.xml"/>
+</TcBusinessDataIncludes>

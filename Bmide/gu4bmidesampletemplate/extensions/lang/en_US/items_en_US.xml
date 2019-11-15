@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessDataLocalization xmlns="http://teamcenter.com/BusinessModel/TcBusinessDataLocalization"
+    Date="">
+<Add>
+   <key locale="en_US" id="BusinessObject{::}Gu4GItemMasterS" status="Approved">G Item Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}Gu4GItemMaster" status="Approved">G Item Master</key>
+   <key locale="en_US" id="BusinessObject{::}Gu4GItemRevMasterS" status="Approved">G Item Revision Master Storage</key>
+   <key locale="en_US" id="BusinessObject{::}Gu4GItemRevisionMaster" status="Approved">G Item Revision Master</key>
+   <key locale="en_US" id="BusinessObject{::}Gu4GItemRevision" status="Approved">G Item Revision</key>
+   <key locale="en_US" id="BusinessObject{::}Gu4GItem" status="Approved">G Item</key>
+   <key locale="en_US" id="Property{::}Gu4GItemRevision{::}gu4TeamName" status="Approved">Team Name</key>
+</Add>
+</TcBusinessDataLocalization>
