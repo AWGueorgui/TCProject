@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
+<Add>
+   <TcClass className="Gu4GChange" parentClassName="ChangeItem" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="Gu4GChangeMasterS" parentClassName="ChangeItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="Gu4GChangeRevMasterS" parentClassName="ChangeItemVerMaster"
+       isExportable="false" isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="Gu4GChangeRevision" parentClassName="ChangeItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="gu4att1" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <OperationInputType typeName="Gu4GChangeCreI" parentTypeName="ChangeItemCreI" typeClassName="Gu4GChangeCreI"
+       description="CreateInput object for &quot;Gu4GChange&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeCreI"/>
+   <OperationInputType typeName="Gu4GChangeMasterCreI" parentTypeName="ChangeItem MasterCreI"
+       typeClassName="Gu4GChangeMasterCreI" description="CreateInput object for &quot;Gu4GChangeMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeMasterCreI"/>
+   <OperationInputType typeName="Gu4GChangeMasterSCreI" parentTypeName="ChangeItemMasterCreI"
+       typeClassName="Gu4GChangeMasterSCreI" description="CreateInput object for &quot;Gu4GChangeMasterS&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeMasterSCreI"/>
+   <OperationInputType typeName="Gu4GChangeMasterSSvAI" parentTypeName="ChangeItemMasterSvAI"
+       typeClassName="Gu4GChangeMasterSSvAI" description="SaveAsInput object for &quot;Gu4GChangeMasterS&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeMasterSSvAI"/>
+   <OperationInputType typeName="Gu4GChangeMasterSvAI" parentTypeName="ChangeItem MasterSvAI"
+       typeClassName="Gu4GChangeMasterSvAI" description="SaveAsInput object for &quot;Gu4GChangeMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeMasterSvAI"/>
+   <OperationInputType typeName="Gu4GChangeRevMasterSCreI" parentTypeName="ChangeItemVerMasterCreI"
+       typeClassName="Gu4GChangeRevMasterSCreI" description="CreateInput object for &quot;Gu4GChangeRevMasterS&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevMasterSCreI"/>
+   <OperationInputType typeName="Gu4GChangeRevMasterSSvAI" parentTypeName="ChangeItemVerMasterSvAI"
+       typeClassName="Gu4GChangeRevMasterSSvAI" description="SaveAsInput object for &quot;Gu4GChangeRevMasterS&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevMasterSSvAI"/>
+   <OperationInputType typeName="Gu4GChangeRevisionCreI" parentTypeName="ChangeItemRevisionCreI"
+       typeClassName="Gu4GChangeRevisionCreI" description="CreateInput object for &quot;Gu4GChangeRevision&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevisionCreI">
+     <OperationInputProperty propName="gu4att1" compoundObjectConstant="" srcPropName="gu4att1"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="Gu4GChangeRevisionMasterCreI" parentTypeName="ChangeItemRevision MasterCreI"
+       typeClassName="Gu4GChangeRevisionMasterCreI" description="CreateInput object for &quot;Gu4GChangeRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevisionMasterCreI"/>
+   <OperationInputType typeName="Gu4GChangeRevisionMasterSvAI" parentTypeName="ChangeItemRevision MasterSvAI"
+       typeClassName="Gu4GChangeRevisionMasterSvAI" description="SaveAsInput object for &quot;Gu4GChangeRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevisionMasterSvAI"/>
+   <OperationInputType typeName="Gu4GChangeRevisionRevI" parentTypeName="ChangeItemRevisionRevI"
+       typeClassName="Gu4GChangeRevisionRevI" description="ReviseInput object for &quot;Gu4GChangeRevision&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevisionRevI"/>
+   <OperationInputType typeName="Gu4GChangeRevisionSvAI" parentTypeName="ChangeItemRevisionSvAI"
+       typeClassName="Gu4GChangeRevisionSvAI" description="SaveAsInput object for &quot;Gu4GChangeRevision&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevisionSvAI"/>
+   <OperationInputType typeName="Gu4GChangeSvAI" parentTypeName="ChangeItemSvAI" typeClassName="Gu4GChangeSvAI"
+       description="SaveAsInput object for &quot;Gu4GChange&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeSvAI"/>
+   <TcForm typeName="Gu4GChangeMaster" parentTypeName="ChangeItem Master" typeClassName="Form"
+       description="MasterForm object for &quot;Gu4GChange&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeMaster" formStorageClassName="Gu4GChangeMasterS"/>
+   <TcForm typeName="Gu4GChangeRevisionMaster" parentTypeName="ChangeItemRevision Master"
+       typeClassName="Form" description="MasterForm object for &quot;Gu4GChangeRevision&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevisionMaster" formStorageClassName="Gu4GChangeRevMasterS"/>
+   <TcStandardType typeName="Gu4GChange" parentTypeName="ChangeItem" typeClassName="Gu4GChange"
+       description="" isAbstract="false" artifactName="Gu4GChange"/>
+   <TcStandardType typeName="Gu4GChangeMasterS" parentTypeName="ChangeItemMaster"
+       typeClassName="Gu4GChangeMasterS" description="Form Storage object for &quot;Gu4GChangeMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeMasterS"/>
+   <TcStandardType typeName="Gu4GChangeRevMasterS" parentTypeName="ChangeItemVerMaster"
+       typeClassName="Gu4GChangeRevMasterS" description="Form Storage object for &quot;Gu4GChangeRevMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GChangeRevMasterS"/>
+   <TcStandardType typeName="Gu4GChangeRevision" parentTypeName="ChangeItemRevision"
+       typeClassName="Gu4GChangeRevision" description="ItemRevision object for &quot;Gu4GChange&quot;  business object"
+       isAbstract="false" artifactName="Gu4GChangeRevision"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GChange" value="Gu4GChangeCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GChangeMaster" value="Gu4GChangeMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GChangeMasterS" value="Gu4GChangeMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GChangeRevision"
+       value="Gu4GChangeRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GChangeRevisionMaster"
+       value="Gu4GChangeRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GChangeRevMasterS"
+       value="Gu4GChangeRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="Gu4GChange" value="Gu4GChangeRevision"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="Gu4GChange" value="Gu4GChangeMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="Gu4GChangeRevision" value="Gu4GChangeRevisionMaster"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="Gu4GChangeRevision"
+       value="Gu4GChangeRevisionRevI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GChange" value="Gu4GChangeSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GChangeMaster" value="Gu4GChangeMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GChangeMasterS" value="Gu4GChangeMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GChangeRevision"
+       value="Gu4GChangeRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GChangeRevisionMaster"
+       value="Gu4GChangeRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GChangeRevMasterS"
+       value="Gu4GChangeRevMasterSSvAI"/>
+   <TcPropertyConstantAttach constantName="Awp0SearchCanFilter" typeName="Gu4GChangeRevision"
+       propertyName="gu4att1" value="true"/>
+   <TcPropertyConstantAttach constantName="Awp0SearchIsIndexed" typeName="Gu4GChangeRevision"
+       propertyName="gu4att1" value="true"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Gu4GChangeRevision"
+       propertyName="gu4att1" value="true"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Gu4GChangeRevision"
+       propertyName="gu4att1" value="Write"/>
+</Add>
+</TcBusinessData>

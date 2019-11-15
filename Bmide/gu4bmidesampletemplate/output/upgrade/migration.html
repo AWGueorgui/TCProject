@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta charset="utf-8"/>
+<style type="text/css">
+
+table
+    {
+    width: 100%;
+    padding: 0;
+    border: 1px solid rgb(50%, 50%, 50%);
+    border-collapse:collapse;
+    }
+
+th
+    {
+    font: bold 16px "Times New Roman";
+    text-align: left;
+    padding: 4px 4px 4px 4px;
+    border: 1px solid rgb(50%, 50%, 50%);
+    background: #CCCCFF;
+    vertical-align:top;
+    }
+
+td
+    {
+    font: normal 14px "Times New Roman";
+    padding: 4px 4px 4px 4px;
+    border: 1px solid rgb(50%, 50%, 50%);
+    vertical-align:top;
+    }
+
+th.light { background:#EEEEFF; font: bold 16px "Times New Roman"  }
+td.diff { background:#ffffcc; }
+td.userAction { background:#ffebeb; }
+td.noUserAction { background:#ebffeb; }
+td.merged { background:#ebebff; }
+td.bold { font: bold 14px "Times New Roman"; }
+tr.collapsed { visibility:collapse; background:#ebffeb; }
+
+</style>
+
+<script type="text/javascript">
+    function hideDetailSection(id)
+        {
+        row = document.getElementById(id);
+        row.style.visibility ="collapse";
+        str = "<a style='color: #0000FF; font-size: 12pt; cursor: pointer;' onclick='showDetailSection(\""+id+"\")'>Show details</a>";
+        document.getElementById(id+"detailsLink").innerHTML = str;
+    }
+    function showDetailSection( id )    {        row = document.getElementById( id );
+        row.style.visibility ="visible";
+        str = "<a style='color: #0000FF; font-size: 12pt' onclick='hideDetailSection(\""+id+"\")'>Hide details</a>";
+        document.getElementById(id+"detailsLink").innerHTML = str;
+    }
+    function hideErrorMessage(id)
+        {
+        row = document.getElementById(id);
+        row.style.visibility ="collapse";
+        str = "<a style='color: #0000FF; font-size: 12pt; cursor: pointer;' onclick='showErrorMessage(\""+id+"\")'>Show Error</a>";
+        document.getElementById(id+"Link").innerHTML = str;
+    }
+    function showErrorMessage( id )    {        row = document.getElementById( id );
+        row.style.visibility ="visible";
+        str = "<a style='color: #0000FF; font-size: 12pt; cursor: pointer;' onclick='hideErrorMessage(\""+id+"\")'>Hide Error</a>";
+        document.getElementById(id+"Link").innerHTML = str;
+    }
+    function hideWarningMessage(id)
+        {
+        row = document.getElementById(id);
+        row.style.visibility ="collapse";
+        str = "<a style='color: #0000FF; font-size: 12pt; cursor: pointer;' onclick='showWarningMessage(\""+id+"\")'>Show Warning</a>";
+        document.getElementById(id+"Link").innerHTML = str;
+    }
+    function showWarningMessage( id )    {        row = document.getElementById( id );
+        row.style.visibility ="visible";
+        str = "<a style='color: #0000FF; font-size: 12pt; cursor: pointer;' onclick='hideWarningMessage(\""+id+"\")'>Hide Warning</a>";
+        document.getElementById(id+"Link").innerHTML = str;
+    }
+</script>
+<TITLE>Project Migration Report</TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+<H2>Project Migration Report</H2>
+<H2>Project Name = gfeatures</H2>
+<H3>Start Time: Thu Nov 14 22:55:57 EST 2019</H3>
+<BR/>
+</CENTER>
+<h4>Migration Summary:  
+The migration and loading of the project has completed successfully.<h4>Project Location = C:\TCCode\Bmide\gfeatures</h4><h4>Upgrade Log = <a href = "C:\TCCode\Bmide\gfeatures\output\upgrade\upgrade_template_2019_11_14_22-55-57.log">C:\TCCode\Bmide\gfeatures\output\upgrade\upgrade_template_2019_11_14_22-55-57.log</a></h4>
+</h4><table border="1" width="100%"  CELLPADDING="1" CELLSPACING="0">
+    <th width="32%">Tasks</th>
+    <th width="8%">Status</th>
+    <th width="60%">Description</th>
+    <tr>
+        <table border="1" width="100%" id="Load Project ModelTbl">
+            <td width="32%"><b>Load Project Model</b></td>
+            <td width="8%"><b>Passed</b></td>
+            <td width="60%">Loads Project Model<br/>Project "gfeatures" upgraded successfully.<br/>
+                <div id="Load Project ModeldetailsLink"><a style="color: #0000FF; font-size: 12pt; cursor: pointer;" onclick="showDetailSection('Load Project Model')">Show details</a></div>
+            </td>
+        <tr id="Load Project Model" class="collapsed">
+            <td colspan="3">Loads Project Model
+This service modifies the following files: <br/>
+No file modified<br/>
+</td>        </tr>
+        </table>
+    </tr>
+    </table>
+</BODY>
+</HTML>
+
