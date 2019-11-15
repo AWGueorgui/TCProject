@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<TcBusinessDataIncludes currentTemplateVersion="12.0_5" displayName="bmidesampletemplate" enableOpsDataDeploy="true" guid="0CF592E1100E9C887A7905D7DD58CCE6" isDescriptionMandatory="false" name="gu4bmidesampletemplate" optional="true" prefixes="Gu4" teamcenterTemplate="false">
+<!--
+@<COPYRIGHT>@
+==================================================
+Copyright 2016.
+Siemens Product Lifecycle Management Software Inc.
+All Rights Reserved.
+==================================================
+@<COPYRIGHT>@
+--><TcBusinessDataIncludes currentTemplateVersion="12.0_5" displayName="bmidesampletemplate" enableOpsDataDeploy="true" guid="0CF592E1100E9C887A7905D7DD58CCE6" isDescriptionMandatory="false" name="gu4bmidesampletemplate" optional="true" prefixes="Gu4" teamcenterTemplate="false">
     <include file="foundation_template.xml"/>
     <include file="aws2_template.xml"/>
     <include file="bdo0branchdataorganization_template.xml"/>

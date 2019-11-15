@@ -15,8 +15,10 @@ All Rights Reserved.
     <customer>All</customer>
     <rtm_type>Major</rtm_type>
     <parent_release/>
-    <platform/>
+    <platform>wntx64</platform>
     <description>bmidesampletemplate</description>
-    <application_dependency/>
+    <application_dependency>
+        <application id="Foundation" release="12.1.0.1"/>
+    </application_dependency>
     <supported_upgrade_paths/>
 </media>

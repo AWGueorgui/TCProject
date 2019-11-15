@@ -1,7 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="">
+<TcBusinessData xmlns="http://teamcenter.com/BusinessModel/TcBusinessData" Date="Thu Nov 14 04:59:42 PM 2019">
 <Add>
+   <TcClass className="Gu4GItem" parentClassName="Item" isExportable="false" isUninstantiable="false"
+       isUninheritable="false" description=""/>
+   <TcClass className="Gu4GItemRevision" parentClassName="ItemRevision" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description="">
+     <TcAttribute attributeName="gu4TeamName" description="" attributeType="POM_string"
+         maxStringLength="128" isArray="false" followOnExport="false" isNullsAllowed="true"
+         isUnique="false" isPublicRead="true" isPublicWrite="true" isCandidateKey="false"
+         isTransient="false" exportAsString="false" noBackpointer="false" lowerBoundValue=""
+         upperBoundValue=""/>
+   </TcClass>
+   <TcClass className="Gu4GItemMasterS" parentClassName="ItemMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcClass className="Gu4GItemRevMasterS" parentClassName="ItemVersionMaster" isExportable="false"
+       isUninstantiable="false" isUninheritable="false" description=""/>
+   <TcForm typeName="Gu4GItemMaster" parentTypeName="Item Master" typeClassName="Form"
+       description="MasterForm object for &quot;Gu4GItem&quot; business object" isAbstract="false"
+       artifactName="Gu4GItemMaster" functionality="Gu4bmidesampletemplate" formStorageClassName="Gu4GItemMasterS"/>
+   <TcForm typeName="Gu4GItemRevisionMaster" parentTypeName="ItemRevision Master"
+       typeClassName="Form" description="MasterForm object for &quot;Gu4GItemRevision&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevisionMaster" functionality="Gu4bmidesampletemplate"
+       formStorageClassName="Gu4GItemRevMasterS"/>
+   <TcStandardType typeName="Gu4GItem" parentTypeName="Item" typeClassName="Gu4GItem"
+       description="" isAbstract="false" artifactName="Gu4GItem" functionality="Gu4bmidesampletemplate"/>
+   <TcStandardType typeName="Gu4GItemRevision" parentTypeName="ItemRevision" typeClassName="Gu4GItemRevision"
+       description="ItemRevision object for &quot;Gu4GItem&quot;  business object"
+       isAbstract="false" artifactName="Gu4GItemRevision" functionality="Gu4bmidesampletemplate"/>
+   <TcStandardType typeName="Gu4GItemMasterS" parentTypeName="ItemMaster" typeClassName="Gu4GItemMasterS"
+       description="Form Storage object for &quot;Gu4GItemMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemMasterS" functionality="Gu4bmidesampletemplate"/>
+   <TcStandardType typeName="Gu4GItemRevMasterS" parentTypeName="ItemVersionMaster"
+       typeClassName="Gu4GItemRevMasterS" description="Form Storage object for &quot;Gu4GItemRevMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevMasterS" functionality="Gu4bmidesampletemplate"/>
+   <OperationInputType typeName="Gu4GItemMasterCreI" parentTypeName="Item MasterCreI"
+       typeClassName="Gu4GItemMasterCreI" description="CreateInput object for &quot;Gu4GItemMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemMasterCreI"/>
+   <OperationInputType typeName="Gu4GItemRevisionMasterCreI" parentTypeName="ItemRevision MasterCreI"
+       typeClassName="Gu4GItemRevisionMasterCreI" description="CreateInput object for &quot;Gu4GItemRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevisionMasterCreI"/>
+   <OperationInputType typeName="Gu4GItemCreI" parentTypeName="ItemCreI" typeClassName="Gu4GItemCreI"
+       description="CreateInput object for &quot;Gu4GItem&quot; business object" isAbstract="false"
+       artifactName="Gu4GItemCreI"/>
+   <OperationInputType typeName="Gu4GItemRevisionCreI" parentTypeName="ItemRevisionCreI"
+       typeClassName="Gu4GItemRevisionCreI" description="CreateInput object for &quot;Gu4GItemRevision&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevisionCreI">
+     <OperationInputProperty propName="gu4TeamName" compoundObjectConstant="" srcPropName="gu4TeamName"
+         compoundObjectType="" fieldType="SimpleProperty" description=""/>
+   </OperationInputType>
+   <OperationInputType typeName="Gu4GItemMasterSCreI" parentTypeName="ItemMasterCreI"
+       typeClassName="Gu4GItemMasterSCreI" description="CreateInput object for &quot;Gu4GItemMasterS&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemMasterSCreI"/>
+   <OperationInputType typeName="Gu4GItemRevMasterSCreI" parentTypeName="ItemVersionMasterCreI"
+       typeClassName="Gu4GItemRevMasterSCreI" description="CreateInput object for &quot;Gu4GItemRevMasterS&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevMasterSCreI"/>
+   <OperationInputType typeName="Gu4GItemRevisionRevI" parentTypeName="ItemRevisionRevI"
+       typeClassName="Gu4GItemRevisionRevI" description="ReviseInput object for &quot;Gu4GItemRevision&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevisionRevI"/>
+   <OperationInputType typeName="Gu4GItemMasterSvAI" parentTypeName="Item MasterSvAI"
+       typeClassName="Gu4GItemMasterSvAI" description="SaveAsInput object for &quot;Gu4GItemMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemMasterSvAI"/>
+   <OperationInputType typeName="Gu4GItemRevisionMasterSvAI" parentTypeName="ItemRevision MasterSvAI"
+       typeClassName="Gu4GItemRevisionMasterSvAI" description="SaveAsInput object for &quot;Gu4GItemRevisionMaster&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevisionMasterSvAI"/>
+   <OperationInputType typeName="Gu4GItemSvAI" parentTypeName="ItemSvAI" typeClassName="Gu4GItemSvAI"
+       description="SaveAsInput object for &quot;Gu4GItem&quot; business object" isAbstract="false"
+       artifactName="Gu4GItemSvAI"/>
+   <OperationInputType typeName="Gu4GItemRevisionSvAI" parentTypeName="ItemRevisionSvAI"
+       typeClassName="Gu4GItemRevisionSvAI" description="SaveAsInput object for &quot;Gu4GItemRevision&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevisionSvAI"/>
+   <OperationInputType typeName="Gu4GItemMasterSSvAI" parentTypeName="ItemMasterSvAI"
+       typeClassName="Gu4GItemMasterSSvAI" description="SaveAsInput object for &quot;Gu4GItemMasterS&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemMasterSSvAI"/>
+   <OperationInputType typeName="Gu4GItemRevMasterSSvAI" parentTypeName="ItemVersionMasterSvAI"
+       typeClassName="Gu4GItemRevMasterSSvAI" description="SaveAsInput object for &quot;Gu4GItemRevMasterS&quot; business object"
+       isAbstract="false" artifactName="Gu4GItemRevMasterSSvAI"/>
    <TcGlobalConstantAttach constantName="Fnd0SelectedLocales" value="en_US"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GItem" value="Gu4GItemCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GItemMaster" value="Gu4GItemMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GItemMasterS" value="Gu4GItemMasterSCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GItemRevision" value="Gu4GItemRevisionCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GItemRevisionMaster"
+       value="Gu4GItemRevisionMasterCreI"/>
+   <TcTypeConstantAttach constantName="CreateInput" typeName="Gu4GItemRevMasterS"
+       value="Gu4GItemRevMasterSCreI"/>
+   <TcTypeConstantAttach constantName="ItemRevision" typeName="Gu4GItem" value="Gu4GItemRevision"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="Gu4GItem" value="Gu4GItemMaster"/>
+   <TcTypeConstantAttach constantName="MasterForm" typeName="Gu4GItemRevision" value="Gu4GItemRevisionMaster"/>
+   <TcTypeConstantAttach constantName="ReviseInput" typeName="Gu4GItemRevision" value="Gu4GItemRevisionRevI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GItem" value="Gu4GItemSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GItemMaster" value="Gu4GItemMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GItemMasterS" value="Gu4GItemMasterSSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GItemRevision" value="Gu4GItemRevisionSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GItemRevisionMaster"
+       value="Gu4GItemRevisionMasterSvAI"/>
+   <TcTypeConstantAttach constantName="SaveAsInput" typeName="Gu4GItemRevMasterS"
+       value="Gu4GItemRevMasterSSvAI"/>
+   <TcPropertyConstantAttach constantName="Enabled" typeName="Gu4GItemRevision" propertyName="gu4TeamName"
+       value="true"/>
+   <TcPropertyConstantAttach constantName="Modifiable" typeName="Gu4GItemRevision"
+       propertyName="gu4TeamName" value="Write"/>
+   <TcPropertyConstantAttach constantName="Awp0SearchCanFilter" typeName="Gu4GItemRevision"
+       propertyName="gu4TeamName" value="true"/>
+   <TcPropertyConstantAttach constantName="Awp0SearchFilterPriority" typeName="Gu4GItemRevision"
+       propertyName="gu4TeamName" value="114"/>
+   <TcPropertyConstantAttach constantName="Awp0SearchIsIndexed" typeName="Gu4GItemRevision"
+       propertyName="gu4TeamName" value="true"/>
    <Functionality name="Gu4bmidesampletemplate" displayName="bmidesampletemplate"
        enabledForVerificationRules="false" description="Component for the template - gu4bmidesampletemplate"/>
 </Add>
