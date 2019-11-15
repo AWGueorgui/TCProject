@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Document   : feature_gu4bmidesampletemplate.xml
+    Description: This XML is used by TEM to install or upgrade the "gu4bmidesampletemplate" solution.
+--><feature>
+    <name value="bmidesampletemplate"/>
+    <property name="feature_name" value="gu4bmidesampletemplate"/>
+    <group value="package"/>
+    <guid value="17B1F5EBE31521615219AC7367388C27"/>
+    <bundle value="${feature_name}Bundle.xml"/>
+    <description value="${feature_name}.description"/>
+    <include file="dataModelDependency.xml"/>
+    <relation>
+        <depends name="aws2" value="EF6284519D32B8DADCF0F05213AF807B"/>
+        <depends name="bdo0branchdataorganization" value="DDF180F1895ACA1CB025A3F35AE23EAF"/>
+        <depends name="bhv0branchfoundation" value="AAB54532B1A2419CA37CAB89837559F0"/>
+        <depends name="cla0classification" value="DA3F5D4113BC31CC36A257EAB0669DDA"/>
+        <depends name="cm" value="E9B8A3F6B7B53AE540DCC54C13B3C201"/>
+        <depends name="nx0tcin" value="0BEECDCD0AD8B6D45617733583A4A78C"/>
+        <depends name="translationservice" value="301F12B06B3EAAB18DC0C2B9444F3B20"/>
+        <depends name="Cm1cmaws" value="B75C673EA57FD9D5EBEF544DE7F07F4E"/>
+        <depends name="activeworkspacebom" value="0F47FD6920230AC9CFDB79C9AC941ADA"/>
+        <depends name="aud0auditaw" value="3Q5E2ST4R267WD0HMZ0V9LOV9YKF9218"/>
+        <depends name="aut0authorizationaws" value="E5F45EFFA34DA47F2CD8E4F150F81C11"/>
+        <depends name="bhv1branchingandversioning" value="72BB4928490187C1553C68107401CD21"/>
+        <depends name="csi" value="D18192F4475ADEA11EC85F454C6ABA31"/>
+        <depends name="dma1docmgmtaw" value="7F3FE95ADA658AA457AB15EF5B75B3FA"/>
+        <depends name="lo1logicalobject" value="137FB144C73C2E5E5D64480BBE256D08"/>
+        <depends name="nx1tcincm" value="FD6055741FAA81B2E0CE0EEBBD051C0F"/>
+        <depends name="rb0reportingaw" value="841B43626F01810EE89A04FF22C744D4"/>
+        <depends name="relationshipviewer" value="75316003BA5162EFA94C6C205E068586"/>
+        <depends name="s2clsocial" value="3E637E73EBF093620F8C1101D2BABF7A"/>
+        <depends name="saw1projectmanagementaw" value="AE4481483E7E1E0A4B7486F62EEAE101"/>
+        <depends name="shapesearch" value="B9E492522F89384ADD92601B2AB91DC8"/>
+        <depends name="sub0subscription" value="6FE48291523DB8DCDAF0F05213AF8B70"/>
+        <depends name="um0usermanagement" value="04A9489F7F5D51E0B521903B748C87B3"/>
+        <depends name="arm0activeworkspacereqmgmt" value="FCD37E245AE8ED69797FCCBF4B316813"/>
+        <depends name="arm1awreqmgmtse" value="6A9C3697BF72CF55B17CC0E5B7247B83"/>
+        <depends name="ase0activeworkspacesyseng" value="5F48BC54A76ED5FA73BDE076E999EAC3"/>
+        <depends name="awv0activeworkspacevis" value="1F2AD473B3C558A24A97D1430FB77F63"/>
+        <depends name="csi1cmsmawinterface" value="2BC4C668A4D924641A0B93812B867DE9"/>
+    </relation>
+    <feature>
+        <!--  Feature: Data Model -->
+        <name value="Data Model"/>
+        <property name="feature_id" value="datamodel"/>
+        <property name="bmide_optional" value="false"/>
+        <property name="template_name" value="${feature_name}"/>
+        <property name="template_file" value="${template_name}_template.xml"/>
+        <root value="true"/>
+        <bundle value="${template_name}Bundle.xml"/>
+        <description value="${template_name}.description"/>
+        <guid value="0CF592E1100E9C887A7905D7DD58CCE6"/>
+        <include file="coreDataModel2.xml"/>
+        <include file="generatePlmxmlSchema.xml"/>
+    </feature>
+    <dependencyReferences>
+        <reference name="foundation" value="8C061DD51E13E0CB9DC4687B1A3348BE"/>
+    </dependencyReferences>
+</feature>
